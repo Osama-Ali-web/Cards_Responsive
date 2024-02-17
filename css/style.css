@@ -1,0 +1,357 @@
+/* CSS */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Tajawal", sans-serif;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+
+.item {
+  background-color: #eaeaea;
+  width: calc(33.33% - 20px);
+  max-width: 400px;
+  margin: 10px;
+  padding: 20px;
+  position: relative;
+  border-radius: 10px;
+  height: 155px;
+}
+
+.item .avatar {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.avatar img {
+  width: 100%;
+  border-radius: 100px;
+}
+
+.content {
+  position: relative;
+}
+
+h3 {
+  display: inline-block;
+  position: absolute;
+  right: 100px;
+  top: 0px;
+}
+
+.p1 {
+  position: absolute;
+  right: 100px;
+  font-size: 15px;
+  top: 30px;
+}
+
+.dot::before {
+  content: " ";
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  display: inline;
+  background-color: #1ba259;
+  position: absolute;
+  left: 65px;
+  top: 10px;
+  font-size: 13px;
+}
+
+.box1 {
+  background-color: #b4dac5;
+  width: 75px;
+  border-radius: 50px;
+  position: relative;
+  top: 4px;
+  padding: 4px 8px;
+  font-size: 13px;
+}
+
+.star {
+  position: relative;
+  top: 30px;
+  right: -100px;
+}
+
+.star .fa {
+  color: #ffc107;
+}
+
+.box2 {
+  position: relative;
+  top: 20px;
+}
+
+.box2 span {
+  /* float: right; */
+  text-align: center;
+}
+
+.box2 a {
+  background-color: #bc6a6a;
+  color: #fff;
+  padding: 10px 70px;
+  text-decoration: none;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.box2 a:hover {
+  background-color: transparent;
+  border: solid 1px #bc6a6a;
+  color: #bc6a6a;
+}
+
+.fa-plus-circle {
+  margin-left: 10px;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1200px) {
+  .box2 a {
+    background-color: #bc6a6a;
+    color: #fff;
+    padding: 10px 55px;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .star {
+    width: 50%;
+    position: relative;
+    top: 30px;
+    right: -61px;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: 820px) and (max-width: 991px) and (min-width: 992px) and (max-width: 1199px) {
+    .item {
+      background-color: #eaeaea;
+      width: calc(50% - 20px);
+      margin: 10px;
+      padding: 10px;
+      position: relative;
+      border-radius: 10px;
+      height: 155px;
+    }
+
+    .box2 a {
+      background-color: #bc6a6a;
+      color: #fff;
+      padding: 6px 32px;
+      text-decoration: none;
+      border-radius: 10px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    .star {
+      width: 100%;
+      position: relative;
+      top: 30px;
+      right: -38px;
+      margin-bottom: 5px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .item {
+      background-color: #eaeaea;
+      width: calc(50% - 20px);
+      margin: 10px;
+      padding: 10px;
+      position: relative;
+      border-radius: 10px;
+      height: 155px;
+    }
+    .box2 a {
+      background-color: #bc6a6a;
+      color: #fff;
+      padding: 10px 90px;
+      text-decoration: none;
+      border-radius: 10px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    .star {
+      width: 50%;
+      position: relative;
+      top: 30px;
+      right: -140px;
+      margin-bottom: 5px;
+    }
+  }
+  @media (min-width: 600px) and (max-width: 767px) {
+    .item {
+      background-color: #eaeaea;
+      width: 50%;
+      margin-left: 20px;
+      padding: 10px;
+      position: relative;
+      border-radius: 10px;
+      height: 155px;
+    }
+    .star {
+      width: 50%;
+      position: relative;
+      top: 30px;
+      right: -137px;
+      margin-bottom: 5px;
+    }
+
+    .box2 a {
+      background-color: #bc6a6a;
+      color: #fff;
+      padding: 10px 90px;
+      text-decoration: none;
+      border-radius: 10px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .item {
+      background-color: #eaeaea;
+      width: 100%;
+      margin-left: 10px;
+      padding: 8px;
+      position: relative;
+      border-radius: 10px;
+      height: 155px;
+    }
+    .star {
+      width: 74%;
+      /* height: fit-content; */
+      position: relative;
+      top: 30px;
+      right: -100px;
+      padding-left: 10px;
+      margin-bottom: 5px;
+    }
+
+    .box2 a {
+      background-color: #bc6a6a;
+      color: #fff;
+      padding: 10px 82px;
+      text-decoration: none;
+      border-radius: 10px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+  }
+
+  @media (min-width: 340px) and (max-width: 720px) {
+    .item {
+      background-color: #eaeaea;
+      width: 100%;
+      margin: 10px;
+      padding: 10px;
+      position: relative;
+      border-radius: 10px;
+      height: 155px;
+    }
+    .star {
+      width: 50%;
+      position: relative;
+      top: 30px;
+      right: -64px;
+      margin-bottom: 5px;
+    }
+
+    .box2 a {
+      background-color: #bc6a6a;
+      color: #fff;
+      padding: 10px 70px;
+      text-decoration: none;
+      border-radius: 10px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+  }
+
+  @media (min-width: 820px) and (mix-width: 1180px) {
+    .item {
+      background-color: #eaeaea;
+      width: calc(50% - 20px);
+      margin: 10px;
+      padding: 10px;
+      position: relative;
+      border-radius: 10px;
+      height: 155px;
+    }
+    .star {
+      width: 50%;
+      position: relative;
+      top: 30px;
+      right: 15px;
+      margin-bottom: 5px;
+    }
+
+    .box2 a {
+      background-color: #bc6a6a;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 10px;
+      display: block;
+      margin-top: 10px;
+    }
+  }
+
+  @media screen and (mix-width: 772px) {
+    .item {
+      background-color: #eaeaea;
+      width: calc(50% - 20px);
+      margin: 10px;
+      padding: 10px;
+      position: relative;
+      border-radius: 10px;
+      height: 155px;
+    }
+    .star {
+      width: 50%;
+      position: relative;
+      top: 30px;
+      right: -95px;
+      margin-bottom: 5px;
+    }
+
+    .box2 a {
+      background-color: #bc6a6a;
+      color: #fff;
+      padding: 10px 70px;
+      text-decoration: none;
+      border-radius: 10px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .item {
+      width: calc(50% - 20px);
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .item {
+      width: 100%;
+    }
+  }
+}
